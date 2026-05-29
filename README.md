@@ -1,5 +1,3 @@
-# Data-Visualization
-
 # Multi-Source Analysis: COVID-19 Impact on Global Education
 
 ## Project Overview
