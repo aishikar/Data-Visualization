@@ -10,19 +10,26 @@ This project establishes an analytical pipeline to investigate how the COVID-19 
 - **Exploratory Profiling:** Mapped row/column dimensions, missing attribute indices, and unique feature frequencies across student survey inputs.
 - **Inconsistency Handling:** Standardized column types and structured raw inputs for multi-source mapping.
 
-### Week 2: Feature Engineering & Dataset Merging (Current)
+### Week 2: Feature Engineering & Dataset Merging
 - **Schema Alignment:** Mapped cross-dataset intersections to determine consistent relational join parameters.
 - **Pipeline Integration:** Created `data_merger.py` to systematically combine independent source survey logs without compromising row integrity.
 - **Feature Generation:** Engineered explicit composite variables tracking total student digital exposure (`Total_Digital_Screen_Time`).
 - **Validation:** Deployed integrity checks monitoring row-inflation or unintended null injection across join processes.
 
+### Week 3: Statistical Modeling & Trend Visualization (Current)
+- **Statistical Correlation:** Implemented data scoring matrices inside `trend_analyzer.py` to evaluate linear dependencies across digital metrics and age profiles.
+- **Aggregated Analytics:** Configured relational grouping blocks to study behavioral indicators sliced across demographics and regional distributions.
+- **Visualization Assets:** Generated a professional matrix heatmap exploring cross-feature interactions, serialized to the `results/` directory.
+
 ## Repository Structure
 * `data/`: Local directory housing raw multi-source survey CSV files and intermediate integrated outputs.
+* `results/`: Directory saving exported visualization graphics and analytical trend plots.
 * `data_loader.py`: Core utility class managing safe parsing boundaries for dataset ingestion.
 * `data_merger.py`: Functional execution script managing tabular merge rules and feature transformations.
 * `eda_summary.py`: Script evaluating preliminary feature metadata structures and array distributions.
+* `trend_analyzer.py`: Analytical execution engine processing correlation passes and rendering statistical plots.
 
 ## How to Run
-1. **Dependencies:** Ensure standard analytics packages are configured:
+1. **Dependencies:** Ensuring standard analytics packages are configured:
    ```bash
    pip install pandas numpy matplotlib seaborn
