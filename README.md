@@ -3,8 +3,6 @@
 ## Project Overview
 This project establishes an analytical pipeline to investigate how the COVID-19 pandemic reshaped student life, learning modalities, and mental routines. By combining multiple independent survey datasets and student metrics, this framework uncovers overarching socio-educational shifts through robust statistical tracking and data visualization.
 
----
-
 ## Project Development Lifecycle
 
 ### Week 1: Data Cleansing & Exploratory Analysis
@@ -27,19 +25,6 @@ This project establishes an analytical pipeline to investigate how the COVID-19 
 - **Workflow Orchestration:** Implemented a master orchestrator (`main.py`) to stitch the data parsing, validation, merging, and visualization blocks together.
 - **Code Refactoring:** Audited the entire repository structure to polish inline documentation, standardize styling profiles, and optimize dataset handling logic.
 - **Final Packaging:** Closed out version control metrics and finalized complete replication criteria.
-
----
-
-## Repository Structure
-* `data/`: Local directory housing raw multi-source survey CSV files and intermediate integrated outputs.
-* `results/`: Directory saving exported visualization graphics and analytical trend plots.
-* `data_loader.py`: Core utility class managing safe parsing boundaries for dataset ingestion.
-* `data_merger.py`: Functional execution script managing tabular merge rules and feature transformations.
-* `eda_summary.py`: Script evaluating preliminary feature metadata structures and array distributions.
-* `trend_analyzer.py`: Analytical execution engine processing correlation passes and rendering statistical plots.
-* `main.py`: Central pipeline orchestrator providing single-point command execution.
-
----
 
 ## How to Run
 1. **Dependencies:** Ensure standard analytics packages are configured:
